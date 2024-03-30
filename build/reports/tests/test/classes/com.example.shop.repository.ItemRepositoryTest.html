@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.831s</div>
+<div class="counter">1.350s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,9 +79,9 @@
 </tr>
 </thead>
 <tr>
-<td class="success">상품 저장 테스트</td>
-<td class="success">createItemTest()</td>
-<td class="success">0.831s</td>
+<td class="success">Querydsl 조회 테스트1</td>
+<td class="success">queryDslTest()</td>
+<td class="success">1.350s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -89,8 +89,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>14:48:27.121 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.shop.repository.ItemRepositoryTest]: ItemRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:48:27.307 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.shop.ShopApplication for test class com.example.shop.repository.ItemRepositoryTest
+<pre>15:52:50.834 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.shop.repository.ItemRepositoryTest]: ItemRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:52:51.015 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.shop.ShopApplication for test class com.example.shop.repository.ItemRepositoryTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -100,20 +100,20 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.4)
 
-2024-03-30T14:48:27.922+09:00  INFO 2194 --- [    Test worker] c.e.shop.repository.ItemRepositoryTest   : Starting ItemRepositoryTest using Java 17.0.8 with PID 2194 (started by jinjaehyck in /Users/jinjaehyck/ShoppingMall)
-2024-03-30T14:48:27.924+09:00  INFO 2194 --- [    Test worker] c.e.shop.repository.ItemRepositoryTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-03-30T14:48:28.888+09:00  INFO 2194 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-03-30T14:48:29.006+09:00  INFO 2194 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
-2024-03-30T14:48:29.622+09:00  INFO 2194 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-03-30T14:48:29.702+09:00  INFO 2194 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-03-30T14:48:29.750+09:00  INFO 2194 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-03-30T14:48:30.041+09:00  INFO 2194 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-03-30T14:48:30.088+09:00  INFO 2194 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-03-30T14:48:30.512+09:00  INFO 2194 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@123ca460
-2024-03-30T14:48:30.515+09:00  INFO 2194 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-03-30T14:48:30.575+09:00  WARN 2194 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-03-30T14:48:30.578+09:00  WARN 2194 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2024-03-30T14:48:31.683+09:00  INFO 2194 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-30T15:52:51.754+09:00  INFO 4056 --- [    Test worker] c.e.shop.repository.ItemRepositoryTest   : Starting ItemRepositoryTest using Java 17.0.8 with PID 4056 (started by jinjaehyck in /Users/jinjaehyck/ShoppingMall)
+2024-03-30T15:52:51.757+09:00  INFO 4056 --- [    Test worker] c.e.shop.repository.ItemRepositoryTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-03-30T15:52:52.674+09:00  INFO 4056 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-30T15:52:52.756+09:00  INFO 4056 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2024-03-30T15:52:53.383+09:00  INFO 4056 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-30T15:52:53.488+09:00  INFO 4056 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-30T15:52:53.542+09:00  INFO 4056 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-30T15:52:53.950+09:00  INFO 4056 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-30T15:52:54.000+09:00  INFO 4056 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-30T15:52:54.543+09:00  INFO 4056 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@342a1f84
+2024-03-30T15:52:54.546+09:00  INFO 4056 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-30T15:52:54.618+09:00  WARN 4056 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-30T15:52:54.620+09:00  WARN 4056 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-30T15:52:55.920+09:00  INFO 4056 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: 
     drop table if exists item
 Hibernate: 
@@ -136,9 +136,10 @@ Hibernate:
     ) engine=InnoDB
 Hibernate: 
     insert into item_seq values ( 1 )
-2024-03-30T14:48:31.847+09:00  INFO 2194 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-03-30T14:48:32.071+09:00  WARN 2194 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-03-30T14:48:32.957+09:00  INFO 2194 --- [    Test worker] c.e.shop.repository.ItemRepositoryTest   : Started ItemRepositoryTest in 5.384 seconds (process running for 7.032)
+2024-03-30T15:52:56.101+09:00  INFO 4056 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-30T15:52:56.356+09:00  WARN 4056 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-30T15:52:57.076+09:00  INFO 4056 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-30T15:52:57.915+09:00  INFO 4056 --- [    Test worker] c.e.shop.repository.ItemRepositoryTest   : Started ItemRepositoryTest in 6.621 seconds (process running for 8.529)
 Hibernate: 
     select
         next_val as id_val 
@@ -158,7 +159,108 @@ Hibernate:
         (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?)
-Item(id=1, itemNm=테스트상품, price=10000, stockNumber=10, itemDetail=테스트 상품 상세 설명, itemSellStatus=SELL, regTime=2024-03-30T14:48:33.687170, updateTime=2024-03-30T14:48:33.687196)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        item_seq for update
+Hibernate: 
+    update
+        item_seq 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        i1_0.item_id,
+        i1_0.item_detail,
+        i1_0.item_nm,
+        i1_0.item_sell_status,
+        i1_0.price,
+        i1_0.reg_time,
+        i1_0.stock_number,
+        i1_0.update_time 
+    from
+        item i1_0 
+    where
+        i1_0.item_sell_status=? 
+        and i1_0.item_detail like ? escape '!' 
+    order by
+        i1_0.price desc
+Item(id=10, itemNm=테스트상품9, price=10009, stockNumber=100, itemDetail=테스트 상품 상세 설명9, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.943855, updateTime=2024-03-30T15:52:58.943887)
+Item(id=9, itemNm=테스트상품8, price=10008, stockNumber=100, itemDetail=테스트 상품 상세 설명8, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.931456, updateTime=2024-03-30T15:52:58.931480)
+Item(id=8, itemNm=테스트상품7, price=10007, stockNumber=100, itemDetail=테스트 상품 상세 설명7, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.919453, updateTime=2024-03-30T15:52:58.919471)
+Item(id=7, itemNm=테스트상품6, price=10006, stockNumber=100, itemDetail=테스트 상품 상세 설명6, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.906852, updateTime=2024-03-30T15:52:58.906879)
+Item(id=6, itemNm=테스트상품5, price=10005, stockNumber=100, itemDetail=테스트 상품 상세 설명5, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.893445, updateTime=2024-03-30T15:52:58.893463)
+Item(id=5, itemNm=테스트상품4, price=10004, stockNumber=100, itemDetail=테스트 상품 상세 설명4, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.879828, updateTime=2024-03-30T15:52:58.879845)
+Item(id=4, itemNm=테스트상품3, price=10003, stockNumber=100, itemDetail=테스트 상품 상세 설명3, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.866646, updateTime=2024-03-30T15:52:58.866684)
+Item(id=3, itemNm=테스트상품2, price=10002, stockNumber=100, itemDetail=테스트 상품 상세 설명2, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.851789, updateTime=2024-03-30T15:52:58.851806)
+Item(id=2, itemNm=테스트상품1, price=10001, stockNumber=100, itemDetail=테스트 상품 상세 설명1, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.822097, updateTime=2024-03-30T15:52:58.822114)
+Item(id=1, itemNm=테스트상품0, price=10000, stockNumber=100, itemDetail=테스트 상품 상세 설명0, itemSellStatus=SELL, regTime=2024-03-30T15:52:58.694289, updateTime=2024-03-30T15:52:58.694309)
 </pre>
 </span>
 </div>
@@ -170,7 +272,7 @@ Item(id=1, itemNm=테스트상품, price=10000, stockNumber=10, itemDetail=테�
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 2024. 3. 30. 오후 2:48:33</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 2024. 3. 30. 오후 3:52:59</p>
 </div>
 </div>
 </body>
