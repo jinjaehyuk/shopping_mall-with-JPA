@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.shop.repository.ItemRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-30T05:48:32" hostname="jinjaehyeog-ui-MacBookPro.local" time="0.831">
+  <properties/>
+  <testcase name="상품 저장 테스트" classname="com.example.shop.repository.ItemRepositoryTest" time="0.831"/>
+  <system-out><![CDATA[14:48:27.121 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.shop.repository.ItemRepositoryTest]: ItemRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:48:27.307 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.shop.ShopApplication for test class com.example.shop.repository.ItemRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2024-03-30T14:48:27.922+09:00  INFO 2194 --- [    Test worker] c.e.shop.repository.ItemRepositoryTest   : Starting ItemRepositoryTest using Java 17.0.8 with PID 2194 (started by jinjaehyck in /Users/jinjaehyck/ShoppingMall)
+2024-03-30T14:48:27.924+09:00  INFO 2194 --- [    Test worker] c.e.shop.repository.ItemRepositoryTest   : No active profile set, falling back to 1 default profile: "default"
+2024-03-30T14:48:28.888+09:00  INFO 2194 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-30T14:48:29.006+09:00  INFO 2194 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2024-03-30T14:48:29.622+09:00  INFO 2194 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-30T14:48:29.702+09:00  INFO 2194 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-30T14:48:29.750+09:00  INFO 2194 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-30T14:48:30.041+09:00  INFO 2194 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-30T14:48:30.088+09:00  INFO 2194 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-30T14:48:30.512+09:00  INFO 2194 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@123ca460
+2024-03-30T14:48:30.515+09:00  INFO 2194 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-30T14:48:30.575+09:00  WARN 2194 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-30T14:48:30.578+09:00  WARN 2194 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-30T14:48:31.683+09:00  INFO 2194 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists item
+Hibernate: 
+    drop table if exists item_seq
+Hibernate: 
+    create table item (
+        price integer not null,
+        stock_number integer not null,
+        item_id bigint not null,
+        reg_time datetime(6),
+        update_time datetime(6),
+        item_nm varchar(50) not null,
+        item_detail tinytext not null,
+        item_sell_status enum ('SELL','SOLE_OUT'),
+        primary key (item_id)
+    ) engine=InnoDB
+Hibernate: 
+    create table item_seq (
+        next_val bigint
+    ) engine=InnoDB
+Hibernate: 
+    insert into item_seq values ( 1 )
+2024-03-30T14:48:31.847+09:00  INFO 2194 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-30T14:48:32.071+09:00  WARN 2194 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-30T14:48:32.957+09:00  INFO 2194 --- [    Test worker] c.e.shop.repository.ItemRepositoryTest   : Started ItemRepositoryTest in 5.384 seconds (process running for 7.032)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        item_seq for update
+Hibernate: 
+    update
+        item_seq 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        item
+        (item_detail, item_nm, item_sell_status, price, reg_time, stock_number, update_time, item_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Item(id=1, itemNm=테스트상품, price=10000, stockNumber=10, itemDetail=테스트 상품 상세 설명, itemSellStatus=SELL, regTime=2024-03-30T14:48:33.687170, updateTime=2024-03-30T14:48:33.687196)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
